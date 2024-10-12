@@ -126,10 +126,6 @@ body {
   .p-70 {
     padding: 50px;
   }
-
-  .hero-img-border-radius {
-    height: 350px;
-  }
 }
 
 @media screen and (max-width: 387.9px) {

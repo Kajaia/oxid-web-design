@@ -1,12 +1,12 @@
 <?php
 
-// Function to return view depending page
+// Route based view
 function view(string $name): mixed
 {
     return include_once "../pages/{$name}.php";
 }
 
-// Switch case for urls to return views
+// Simple routes
 $requestUri = $_SERVER['REQUEST_URI'];
 switch ($requestUri) {
     case '/':

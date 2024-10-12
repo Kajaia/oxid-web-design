@@ -63,3 +63,15 @@ body {
   font-weight: 400;
   font-size: var(--fs-medium);
 }
+
+/* Custom */
+.bg-navbar {
+  background-color: transparent;
+}
+
+/* Responsive */
+@media screen and (max-width: 991.9px) {
+  .bg-navbar {
+    background-color: var(--c-white);
+  }
+}

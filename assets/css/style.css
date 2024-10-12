@@ -1,0 +1,65 @@
+/* Font */
+@font-face {
+  font-family: "TBCDinMtavruli";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TBCDinMtavruli.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TBCDinMtavruli";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/TBCDinMtavruli-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TBCDinMtavruli";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/TBCDinMtavruli-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+/* Root variables */
+:root {
+  --c-primary: #dd4848;
+  --c-secondary: #205c91;
+  --c-dark: #032340;
+  --c-white: #fff;
+  --c-light: #eee;
+  --c-gray: #6f6f6f;
+  --c-black: #000;
+  --fs-medium: 15px;
+  --fs-small: 14px;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-secondary);
+}
+/* /Scroll bar */
+
+/* Placeholder */
+::placeholder {
+  color: var(--c-gray) !important;
+}
+
+/* Global tags */
+body {
+  font-family: "TBCDinMtavruli", sans-serif;
+  font-weight: 400;
+  font-size: var(--fs-medium);
+}

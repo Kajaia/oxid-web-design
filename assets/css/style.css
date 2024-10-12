@@ -1,32 +1,7 @@
-/* Font */
-@font-face {
-  font-family: "TBCDinMtavruli";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/TBCDinMtavruli.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "TBCDinMtavruli";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/TBCDinMtavruli-Medium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "TBCDinMtavruli";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/TBCDinMtavruli-Bold.woff") format("woff");
-  font-display: swap;
-}
-
 /* Root variables */
 :root {
-  --c-primary: #dd4848;
-  --c-secondary: #205c91;
+  --c-primary: #e5b331;
+  --c-secondary: #20a1ec;
   --c-dark: #032340;
   --c-white: #fff;
   --c-light: #eee;
@@ -59,19 +34,115 @@
 
 /* Global tags */
 body {
-  font-family: "TBCDinMtavruli", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
   font-size: var(--fs-medium);
 }
 
 /* Custom */
-.bg-navbar {
-  background-color: transparent;
+.cover {
+  object-fit: cover;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.hero-bg {
+  background: linear-gradient(90deg, #e8d8ae 0%, #aedbf3 100%);
+}
+
+.p-70 {
+  padding: 70px;
+}
+
+.border-right {
+  border-right: 1px solid #032340;
+}
+
+.hero-img-border-radius {
+  border-top-right-radius: var(--bs-border-radius-lg);
+  border-bottom-right-radius: var(--bs-border-radius-lg);
 }
 
 /* Responsive */
+@media screen and (max-width: 1399.9px) {
+  .hero-img-border-radius {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 991.9px) {
   .bg-navbar {
     background-color: var(--c-white);
+  }
+
+  .hero-img-border-radius {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--bs-border-radius-lg);
+    border-bottom-right-radius: var(--bs-border-radius-lg);
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .hero-img-border-radius {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 575.9px) {
+  .p-70 {
+    padding: 60px;
+  }
+
+  .hero-img-border-radius {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 424.9px) {
+  .p-70 {
+    padding: 50px;
+  }
+
+  .hero-img-border-radius {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 387.9px) {
+  .p-70 {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 367.9px) {
+  .p-70 {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 347.9px) {
+  .p-70 {
+    padding: 20px;
+  }
+
+  .border-right {
+    border-right: none;
+  }
+
+  .play-store-img {
+    width: 123px;
+    height: 30px;
+  }
+
+  .app-store-img {
+    width: 123px;
+    height: 30px;
   }
 }

@@ -69,6 +69,19 @@ body {
   border-bottom-right-radius: var(--bs-border-radius-lg);
 }
 
+.hero-section {
+  margin: 10px auto;
+}
+
+/* Bootstrap */
+.text-primary {
+  color: var(--c-primary) !important;
+}
+
+.text-secondary {
+  color: var(--c-secondary) !important;
+}
+
 /* Responsive */
 @media screen and (max-width: 1399.9px) {
   .hero-img-border-radius {
@@ -86,6 +99,10 @@ body {
     border-bottom-left-radius: var(--bs-border-radius-lg);
     border-bottom-right-radius: var(--bs-border-radius-lg);
     height: 600px;
+  }
+
+  .hero-section {
+    margin: -10px auto 10px auto;
   }
 }
 

@@ -73,6 +73,10 @@ body {
   margin: 10px auto;
 }
 
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

@@ -6,6 +6,7 @@
   --c-white: #fff;
   --c-light: #eee;
   --c-gray: #6f6f6f;
+  --c-light-gray: #b7b7b7;
   --c-black: #000;
   --fs-medium: 15px;
   --fs-small: 14px;
@@ -75,6 +76,27 @@ body {
 
 .text-wrap-balance {
   text-wrap: balance;
+}
+
+.text-gray {
+  color: var(--c-gray);
+}
+
+.fs-small {
+  font-size: var(--fs-small);
+}
+
+.services-border-right-bottom {
+  border-right: 1px solid var(--c-light-gray);
+  border-bottom: 1px solid var(--c-light-gray);
+}
+
+.services-border-bottom {
+  border-bottom: 1px solid var(--c-light-gray);
+}
+
+.services-border-right {
+  border-right: 1px solid var(--c-light-gray);
 }
 
 /* Bootstrap */

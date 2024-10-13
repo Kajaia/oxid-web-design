@@ -100,7 +100,7 @@ body {
 }
 
 .services-illustration {
-  margin-top: -20px;
+  margin-top: -45px;
 }
 
 /* Bootstrap */
@@ -139,6 +139,10 @@ body {
 
   .hero-section {
     margin: -10px auto 10px auto;
+  }
+
+  .services-illustration {
+    margin-top: 0;
   }
 }
 

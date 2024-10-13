@@ -99,6 +99,10 @@ body {
   border-right: 1px solid var(--c-light-gray);
 }
 
+.services-illustration {
+  margin-top: -20px;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

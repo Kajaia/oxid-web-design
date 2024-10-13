@@ -144,6 +144,10 @@ body {
   .services-illustration {
     margin-top: 0;
   }
+
+  .why-us-illustration {
+    margin-bottom: 70px;
+  }
 }
 
 @media screen and (max-width: 767.9px) {

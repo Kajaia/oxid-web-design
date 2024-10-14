@@ -50,6 +50,19 @@ function hideOrderNow(event) {
 // FAQ
 function collapseQuestion(event) {
   const currentElement = event.currentTarget;
+
+  const faqList = document.querySelectorAll(".faq-card");
+  faqList.forEach((faq) => {
+    if (faq !== currentElement) {
+      const faqAnswer = faq.querySelectorAll("span")[1];
+      const faqPaths = faq.querySelectorAll("path");
+
+      faqAnswer.classList.add("d-none");
+      faqPaths[0].classList.remove("d-none");
+      faqPaths[1].classList.add("d-none");
+    }
+  });
+
   const answer = currentElement.querySelectorAll("span")[1];
   const paths = currentElement.querySelectorAll("path");
 

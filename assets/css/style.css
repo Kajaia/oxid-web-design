@@ -2,7 +2,7 @@
 :root {
   --c-primary: #e5b331;
   --c-secondary: #20a1ec;
-  --c-dark: #032340;
+  --c-dark: #1a1e32;
   --c-white: #fff;
   --c-light: #eee;
   --c-light-dark: #f3f7fb;
@@ -188,6 +188,38 @@ body {
   background-position: top left;
 }
 
+.footer-link {
+  color: var(--c-white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--c-primary);
+}
+
+.footer-link-secondary {
+  color: var(--c-secondary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link-secondary:hover {
+  color: var(--c-primary);
+}
+
+.footer-navigation {
+  padding-left: 28px;
+}
+
+.footer-border {
+  border-top: 10px solid var(--c-secondary);
+}
+
+.footer-container {
+  padding: 50px;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;
@@ -218,6 +250,10 @@ body {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+}
+
+.bg-dark {
+  background-color: var(--c-dark) !important;
 }
 
 /* Responsive */
@@ -274,6 +310,10 @@ body {
 
   .w-45 {
     width: 100%;
+  }
+
+  .footer-container {
+    padding: 50px 30px 0 30px;
   }
 }
 

@@ -39,6 +39,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -111,10 +115,42 @@
                 ENG
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end rounded-3 shadow border-0"
+                class="dropdown-menu dropdown-menu-end rounded-3 shadow border-0 animate__animated animate__bounceIn"
               >
-                <li><a class="dropdown-item" href="#">Georgian</a></li>
-                <li><a class="dropdown-item" href="#">Endglish</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    rel="alternate"
+                    hreflang="ka"
+                    href="#ka"
+                  >
+                    <img
+                      width="20"
+                      height="20"
+                      src="/assets/img/icons/flags/georgia.svg"
+                      alt="Georgia flag"
+                      loading="lazy"
+                    />
+                    Georgian
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    rel="alternate"
+                    hreflang="en"
+                    href="#en"
+                  >
+                    <img
+                      width="20"
+                      height="20"
+                      src="/assets/img/icons/flags/britain.svg"
+                      alt="Britain flag"
+                      loading="lazy"
+                    />
+                    English
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>

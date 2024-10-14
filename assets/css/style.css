@@ -132,6 +132,16 @@ body {
   margin-top: 60px;
 }
 
+.steps-image {
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+
+.steps-col:hover .steps-image {
+  transform: rotateY(180deg);
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;
@@ -155,6 +165,11 @@ body {
 
   .faq-illustration {
     height: 400px;
+  }
+
+  .steps-arrow {
+    width: 90px;
+    height: 70px;
   }
 }
 
@@ -184,6 +199,14 @@ body {
 
   .faq-illustration {
     height: 100%;
+  }
+
+  .steps-arrow-col {
+    display: none;
+  }
+
+  .steps-col {
+    margin: 30px 0;
   }
 }
 

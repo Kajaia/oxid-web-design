@@ -1,13 +1,13 @@
 {
-  "name": "OXID.GE - Laundry Service",
+  "name": "OXID.GE - Laundry Services",
   "short_name": "OXID.GE",
-  "description": "Lorem ipsum dolor, sit amet...",
+  "description": "Professional washing, dry-cleaning, and ironing services",
   "theme_color": "#20a1ec",
   "background_color": "#fff",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "portrait",
   "dir": "ltr",
-  "categories": ["laundry"],
+  "categories": ["laundry", "washing", "ironing", "dry-cleaning"],
   "scope": "/",
   "start_url": "/",
   "icons": [

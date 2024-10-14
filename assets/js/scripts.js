@@ -27,3 +27,22 @@ document.addEventListener("scroll", () => {
     document.querySelector("nav").classList.remove("shadow");
   }
 });
+
+// Show and hide order now
+function showOrderNow(event) {
+  const currentElement = event.currentTarget;
+  const button = currentElement.querySelector("button");
+
+  if (button.classList.contains("d-none")) {
+    button.classList.remove("d-none");
+  }
+}
+
+function hideOrderNow(event) {
+  const currentElement = event.currentTarget;
+  const button = currentElement.querySelector("button");
+
+  if (!button.classList.contains("d-none")) {
+    button.classList.add("d-none");
+  }
+}

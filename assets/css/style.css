@@ -5,6 +5,7 @@
   --c-dark: #032340;
   --c-white: #fff;
   --c-light: #eee;
+  --c-light-dark: #f3f7fb;
   --c-gray: #6f6f6f;
   --c-light-gray: #b7b7b7;
   --c-black: #000;
@@ -101,6 +102,10 @@ body {
 
 .services-illustration {
   margin-top: -45px;
+}
+
+.bg-light-dark {
+  background-color: var(--c-light-dark);
 }
 
 /* Bootstrap */

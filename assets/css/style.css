@@ -178,6 +178,16 @@ body {
   color: var(--c-secondary);
 }
 
+.mobile-app-container {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  background-image: url("/assets/img/photos/mobile-girl-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

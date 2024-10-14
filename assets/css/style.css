@@ -112,6 +112,22 @@ body {
   animation-duration: 0.5s;
 }
 
+.faq-card {
+  cursor: pointer;
+}
+
+.faq-card:hover .faq-icon {
+  fill: var(--c-secondary);
+}
+
+.faq-card:hover .faq-question {
+  color: var(--c-secondary);
+}
+
+.faq-question {
+  margin-top: -5px;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

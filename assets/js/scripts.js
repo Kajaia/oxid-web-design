@@ -46,3 +46,20 @@ function hideOrderNow(event) {
     button.classList.add("d-none");
   }
 }
+
+// FAQ
+function collapseQuestion(event) {
+  const currentElement = event.currentTarget;
+  const answer = currentElement.querySelectorAll("span")[1];
+  const paths = currentElement.querySelectorAll("path");
+
+  if (answer.classList.contains("d-none")) {
+    answer.classList.remove("d-none");
+    paths[0].classList.add("d-none");
+    paths[1].classList.remove("d-none");
+  } else {
+    answer.classList.add("d-none");
+    paths[0].classList.remove("d-none");
+    paths[1].classList.add("d-none");
+  }
+}

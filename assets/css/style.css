@@ -148,6 +148,10 @@ body {
   .hero-img-border-radius {
     height: 100%;
   }
+
+  .faq-illustration {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 991.9px) {
@@ -172,6 +176,10 @@ body {
 
   .why-us-illustration {
     margin-bottom: 70px;
+  }
+
+  .faq-illustration {
+    height: 100%;
   }
 }
 

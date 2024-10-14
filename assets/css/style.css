@@ -108,6 +108,10 @@ body {
   background-color: var(--c-light-dark);
 }
 
+.animation-duration-05 {
+  animation-duration: 0.5s;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

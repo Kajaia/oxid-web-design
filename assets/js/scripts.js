@@ -19,6 +19,19 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
+// SwiperJS
+var swiper = new Swiper(".home-slider", {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // Show and hide order now
 function showOrderNow(event) {
   const currentElement = event.currentTarget;

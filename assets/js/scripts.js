@@ -19,15 +19,6 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
-// Add shadow to navbar on scroll
-document.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    document.querySelector("nav").classList.add("shadow");
-  } else {
-    document.querySelector("nav").classList.remove("shadow");
-  }
-});
-
 // Show and hide order now
 function showOrderNow(event) {
   const currentElement = event.currentTarget;

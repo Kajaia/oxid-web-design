@@ -10,16 +10,16 @@
     <link rel="preload" href="/assets/img/photos/woman-smelling-clothes.webp" as="image" />
     <!-- SEO -->
     <meta name="robots" content="index, follow" />
-    <title>OXID.GE - Laundry services</title>
+    <title>Frequently Asked Question - OXID.GE</title>
     <meta name="description" content="Professional washing, dry-cleaning, and ironing services" />
     <link rel="canonical" href="https://oxid.vercel.app/" />
-    <meta property="og:title" content="OXID.GE - Laundry services" />
+    <meta property="og:title" content="Frequently Asked Question - OXID.GE" />
     <meta property="og:description" content="Professional washing, dry-cleaning, and ironing services" />
     <meta property="og:image" content="https://oxid.vercel.app/assets/img/oxid-poster.webp" />
     <meta property="og:url" content="https://oxid.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="OXID.GE - Laundry services" />
+    <meta name="twitter:title" content="Frequently Asked Question - OXID.GE" />
     <meta name="twitter:description" content="Professional washing, dry-cleaning, and ironing services" />
     <meta name="twitter:image" content="https://oxid.vercel.app/assets/img/oxid-poster.webp" />
     <!-- Styles -->
@@ -47,7 +47,7 @@
               <a class="nav-link fw-bold fs-6" href="/about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-6" href="#services">Services</a>
+              <a class="nav-link fw-bold fs-6" href="/index.html#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold fs-6" href="/prices.html">Prices</a>
@@ -82,115 +82,109 @@
         </div>
       </div>
     </nav>
-    <!-- Services -->
-    <section id="services" class="container">
-      <div class="row py-5">
-        <h2 class="my-5 text-center display-4 fw-bold">Services</h2>
-        <div class="col-lg-7 my-auto" data-aos="zoom-in">
+    <!-- Breadcrumb -->
+    <div class="container mt-5" data-aos="fade-down">
+      <div class="row">
+        <h2 class="text-center display-5 fw-bold">FAQ</h2>
+        <div class="col-12">
+          <nav aria-label="breadcrumb" class="d-flex align-items-center justify-content-center">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ -->
+    <section id="faq" class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col-lg-7" data-aos="zoom-in">
+          <p class="lead mb-5">Have questions about our services? We’ve got you covered. Below are some common questions and quick answers to help you understand how OXID works.</p>
           <div class="row">
-            <div class="col-6 text-center p-4 services-border-right-bottom">
-              <img width="50" height="50" src="/assets/img/icons/services/washing.svg" alt="Washing icon" />
-              <h3 class="fs-5 mt-3">Washing</h3>
-              <p class="text-gray fs-small">
-                <small>Washing your laundry</small>
-              </p>
-              <p class="fw-bold">From <span class="text-secondary fs-5">₾15.00</span></p>
+            <!-- Question -->
+            <div class="col-12">
+              <div onclick="collapseQuestion(event)" class="card faq-card border-0">
+                <div class="card-body p-0 d-flex flex-start gap-2">
+                  <svg class="faq-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                    <path class="d-none" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                  </svg>
+                  <div class="d-flex flex-column gap-2">
+                    <span class="fs-5 faq-question">How do I schedule a laundry pickup?</span>
+                    <span class="d-none animate__animated animate__bounceIn">Download our app, create an account, and schedule your pickup with just a few taps.</span>
+                  </div>
+                </div>
+              </div>
+              <hr class="text-gray" />
             </div>
-            <div class="col-6 text-center p-4 services-border-bottom">
-              <img width="50" height="50" src="/assets/img/icons/services/dry-cleaning.svg" alt="Dry-cleaning icon" />
-              <h3 class="fs-5 mt-3">Dry-cleaning</h3>
-              <p class="text-gray fs-small">
-                <small>Wash, dry and fold</small>
-              </p>
-              <p class="fw-bold">From <span class="text-secondary fs-5">₾25.00</span></p>
+            <!-- Question -->
+            <div class="col-12">
+              <div onclick="collapseQuestion(event)" class="card faq-card border-0">
+                <div class="card-body p-0 d-flex flex-start gap-2">
+                  <svg class="faq-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                    <path class="d-none" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                  </svg>
+                  <div class="d-flex flex-column gap-2">
+                    <span class="fs-5 faq-question">What services does OXID offer?</span>
+                    <span class="d-none animate__animated animate__bounceIn">We provide washing, dry-cleaning, and ironing services for all types of clothing.</span>
+                  </div>
+                </div>
+              </div>
+              <hr class="text-gray" />
             </div>
-            <div class="col-6 text-center p-4 services-border-right">
-              <img width="50" height="50" src="/assets/img/icons/services/ironing.svg" alt="Ironing icon" />
-              <h3 class="fs-5 mt-3">Ironing</h3>
-              <p class="text-gray fs-small">
-                <small>Iron and fold</small>
-              </p>
-              <p class="fw-bold">From <span class="text-secondary fs-5">₾10.00</span></p>
+            <!-- Question -->
+            <div class="col-12">
+              <div onclick="collapseQuestion(event)" class="card faq-card border-0">
+                <div class="card-body p-0 d-flex flex-start gap-2">
+                  <svg class="faq-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                    <path class="d-none" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                  </svg>
+                  <div class="d-flex flex-column gap-2">
+                    <span class="fs-5 faq-question">How long does it take to get my laundry back?</span>
+                    <span class="d-none animate__animated animate__bounceIn">We offer fast turnaround, with most orders completed within 24-48 hours.</span>
+                  </div>
+                </div>
+              </div>
+              <hr class="text-gray" />
             </div>
-            <div class="col-6 text-center p-4">
-              <img width="50" height="50" src="/assets/img/icons/services/day-dress.svg" alt="Day dress icon" />
-              <h3 class="fs-5 mt-3">Day dress</h3>
-              <p class="text-gray fs-small">
-                <small>Dry cleaning and ironing</small>
-              </p>
-              <p class="fw-bold">From <span class="text-secondary fs-5">₾35.00</span></p>
+            <!-- Question -->
+            <div class="col-12">
+              <div onclick="collapseQuestion(event)" class="card faq-card border-0">
+                <div class="card-body p-0 d-flex flex-start gap-2">
+                  <svg class="faq-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                    <path class="d-none" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                  </svg>
+                  <div class="d-flex flex-column gap-2">
+                    <span class="fs-5 faq-question">Are your cleaning products eco-friendly?</span>
+                    <span class="d-none animate__animated animate__bounceIn">Yes, we use environmentally safe products for all our services.</span>
+                  </div>
+                </div>
+              </div>
+              <hr class="text-gray" />
+            </div>
+            <!-- Question -->
+            <div class="col-12">
+              <div onclick="collapseQuestion(event)" class="card faq-card border-0">
+                <div class="card-body p-0 d-flex flex-start gap-2">
+                  <svg class="faq-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                    <path class="d-none" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                  </svg>
+                  <div class="d-flex flex-column gap-2">
+                    <span class="fs-5 faq-question">How can I pay for the services?</span>
+                    <span class="d-none animate__animated animate__bounceIn">You can pay securely through the app using credit cards or digital payment methods.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5" data-aos="fade-down">
-          <img width="100%" height="100%" class="services-illustration" src="/assets/img/illustrations/services.svg" alt="Services illustration" loading="lazy" />
-        </div>
-      </div>
-    </section>
-    <!-- How it works section -->
-    <section id="how-it-works" class="container-fluid p-5 bg-light-dark">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <span class="text-center display-6 fw-bold mb-5" data-aos="fade-down">How it works: in 4 easy steps</span>
-          <!-- Step -->
-          <div class="col-12 col-md-6 col-lg-2 steps-col text-center" data-aos="fade-up">
-            <img width="100" height="100" class="steps-image" src="/assets/img/icons/steps/laundry-basket.svg" alt="Laundry basket icon" loading="lazy" />
-            <p class="mb-0 mt-3">Step 1</p>
-            <p class="mb-0 fw-bold mt-2 fs-5 steps-title"><span class="text-secondary">Bag up</span> all your dirty clothes</p>
-          </div>
-          <!-- Arrow -->
-          <div class="col-1 steps-arrow-col">
-            <img width="120" height="100" class="steps-arrow" src="/assets/img/icons/steps/step-arrow-down.webp" alt="Arrow image" loading="lazy" />
-          </div>
-          <!-- Step -->
-          <div class="col-12 col-md-6 col-lg-2 steps-col text-center" data-aos="fade-up">
-            <img width="100" height="100" class="steps-image" src="/assets/img/icons/steps/delivery-truck.svg" alt="Delivery truck icon" loading="lazy" />
-            <p class="mb-0 mt-3">Step 2</p>
-            <p class="mb-0 fw-bold mt-2 fs-5 steps-title">We <span class="text-secondary">pick up</span> your clothes</p>
-          </div>
-          <!-- Arrow -->
-          <div class="col-1 steps-arrow-col">
-            <img width="120" height="100" class="steps-arrow" src="/assets/img/icons/steps/step-arrow-up.webp" alt="Arrow image" loading="lazy" />
-          </div>
-          <!-- Step -->
-          <div class="col-12 col-md-6 col-lg-2 steps-col text-center" data-aos="fade-up">
-            <img width="100" height="100" class="steps-image" src="/assets/img/icons/steps/washing-machine.svg" alt="Washing machine icon" loading="lazy" />
-            <p class="mb-0 mt-3">Step 3</p>
-            <p class="mb-0 fw-bold mt-2 fs-5 steps-title">We <span class="text-secondary">clean</span> your clothes</p>
-          </div>
-          <!-- Arrow -->
-          <div class="col-1 steps-arrow-col">
-            <img width="120" height="100" class="steps-arrow" src="/assets/img/icons/steps/step-arrow-down.webp" alt="Arrow image" loading="lazy" />
-          </div>
-          <!-- Step -->
-          <div class="col-12 col-md-6 col-lg-2 steps-col text-center" data-aos="fade-up">
-            <img width="100" height="100" class="steps-image" src="/assets/img/icons/steps/folded-cloth.svg" alt="Folded cloth icon" loading="lazy" />
-            <p class="mb-0 mt-3">Step 4</p>
-            <p class="mb-0 fw-bold mt-2 fs-5 steps-title">We <span class="text-secondary">deliver</span> clean, folded clothes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- App -->
-    <section id="app" class="container-fluid mobile-app-container bg-light-dark">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-12" data-aos="zoom-in">
-            <span class="text-danger fw-bold">Don't miss our new application</span>
-            <h2 class="display-6 fw-bold mt-3">
-              Get Our Mobile App for <br />
-              Easy and Convenient Usage
-            </h2>
-            <!-- App buttons -->
-            <div class="mt-5">
-              <a href="https://play.google.com/store/apps" target="_blank" class="text-decoration-none">
-                <img width="152.5" height="45" class="play-store-img" src="/assets/img/play-store.svg" alt="OXID app on android play store" loading="lazy" />
-              </a>
-              <a href="https://www.apple.com/app-store" target="_blank" class="text-decoration-none ms-1">
-                <img width="134.61" height="45" class="app-store-img" src="/assets/img/app-store.svg" alt="OXID app on ios app store" loading="lazy" />
-              </a>
-            </div>
-          </div>
+          <img width="100%" height="550" class="rounded-3" src="/assets/img/illustrations/faq.webp" alt="FAQ illustration" loading="lazy" />
         </div>
       </div>
     </section>
@@ -226,7 +220,7 @@
                   <a class="footer-link" href="/about.html">About us</a>
                 </li>
                 <li>
-                  <a class="footer-link" href="#services">Our services</a>
+                  <a class="footer-link" href="/index.html#services">Our services</a>
                 </li>
                 <li>
                   <a class="footer-link" href="/prices.html">Our prices</a>

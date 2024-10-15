@@ -83,6 +83,10 @@ body {
   color: var(--c-gray);
 }
 
+.text-light-gray {
+  color: var(--c-light-gray);
+}
+
 .fs-small {
   font-size: var(--fs-small);
 }
@@ -219,6 +223,14 @@ body {
 .footer-container {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+.border-top-light-gray {
+  border-top: 1px solid var(--c-light-gray);
+}
+
+.border-bottom-light-gray {
+  border-bottom: 1px solid var(--c-light-gray);
 }
 
 /* Bootstrap */

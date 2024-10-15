@@ -283,6 +283,10 @@ body {
   height: 80vh;
 }
 
+.breadcrumb a {
+  color: var(--c-primary);
+}
+
 /* Responsive */
 @media screen and (max-width: 1399.9px) {
   .hero-img-border-radius {

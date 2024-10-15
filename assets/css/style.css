@@ -287,6 +287,15 @@ body {
   color: var(--c-primary);
 }
 
+.services-card {
+  transition: 0.5s;
+}
+
+.services-card:hover {
+  top: -5px;
+  background-color: var(--c-primary);
+}
+
 /* Responsive */
 @media screen and (max-width: 1399.9px) {
   .hero-img-border-radius {
@@ -381,6 +390,10 @@ body {
 
   .hero-img-border-radius {
     height: 400px;
+  }
+
+  .services-card .card-body {
+    padding: 20px 0 10px 0 !important;
   }
 }
 

@@ -23,8 +23,12 @@ AOS.init({
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
   autoplay: {
-    delay: 3000,
+    delay: 30000000,
     disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",

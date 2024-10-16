@@ -296,6 +296,11 @@ body {
   background-color: var(--c-primary);
 }
 
+/* Swiper */
+.swiper-pagination-bullet-active {
+  background: var(--c-secondary, var(--c-secondary));
+}
+
 /* Responsive */
 @media screen and (max-width: 1399.9px) {
   .hero-img-border-radius {

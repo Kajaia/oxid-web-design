@@ -84,3 +84,19 @@ function collapseQuestion(event) {
     paths[1].classList.add("d-none");
   }
 }
+
+// Change logo on scroll
+document.addEventListener("scroll", () => {
+  const brand = document.querySelector(".navbar-brand");
+  const img = brand.querySelector("img");
+
+  if (window.scrollY > 0) {
+    img.src = "/assets/img/logo-full.svg";
+    img.classList.remove("animate__bounceIn");
+    img.classList.add("animate__fadeIn");
+  } else {
+    img.src = "/assets/img/logo.svg";
+    img.classList.remove("animate__fadeIn");
+    img.classList.add("animate__bounceIn");
+  }
+});

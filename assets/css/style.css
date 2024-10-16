@@ -233,6 +233,19 @@ body {
   border-bottom: 5px solid var(--c-secondary);
 }
 
+.nav-number {
+  margin-top: -6px;
+  transition: 0.3s;
+}
+
+.nav-number:hover {
+  color: var(--c-primary) !important;
+}
+
+.custom-animate {
+  animation: tada 2s infinite;
+}
+
 /* Bootstrap */
 .text-primary {
   color: var(--c-primary) !important;

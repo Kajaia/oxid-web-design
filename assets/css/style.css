@@ -132,10 +132,6 @@ body {
   margin-top: -5px;
 }
 
-.faq-illustration {
-  margin-top: 60px;
-}
-
 .steps-image {
   transition: transform 0.6s ease-in-out;
   transform-style: preserve-3d;
@@ -339,6 +335,7 @@ body {
   }
 
   .faq-illustration {
+    margin-top: 30px;
     height: 400px;
   }
 
